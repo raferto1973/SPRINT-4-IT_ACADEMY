@@ -28,8 +28,8 @@ async function getJoke() {
     }
 }
 
-  // Obtenemos un chiste al cargar la página
-    getJoke();
+// Obtenemos un chiste al cargar la página
+getJoke();
 
 // Añadimos un evento al botón para obtener un nuevo chiste
 const nextJokeButton = document.getElementById('nextJoke');

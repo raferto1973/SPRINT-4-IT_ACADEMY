@@ -5,7 +5,7 @@ const headers = {
     'Accept': 'application/json'
 };
 
-// Modifiquem la funció getJoke perquè guardi la informació de l'acudit a reportJokes
+// Funció getJoke perquè guardi l'nformació de l'acudit a reportJokes
 
 async function getJoke() {
     try {

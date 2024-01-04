@@ -20,13 +20,15 @@ function getJoke() {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
             const data = yield response.json();
-            console.log(data);
             const joke = data.joke;
-            console.log(joke);
+            const jokeReport = new ReportAcudits(joke);
+            reportJokes.push(jokeReport);
             document.querySelector('.jokeText').innerText = joke;
+            console.log(joke);
+            console.log(reportJokes);
         }
         catch (error) {
-            console.error(`Error obteniendo el chiste: ${error}`);
+            console.error(`Error obtenint l'acudit: ${error}`);
         }
     });
 }

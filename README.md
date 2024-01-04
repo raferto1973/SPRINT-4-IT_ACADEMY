@@ -54,5 +54,7 @@ API's:
 
 Temps:     https://rapidapi.com/worldapi/api/open-weather13/
 Acudits:   https://icanhazdadjoke.com/
+           https://api.chucknorris.io/#!
+           
            
 

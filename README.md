@@ -48,3 +48,13 @@ A continuació tens les indicacions del responsable front end:
 Hauràs d'implementar el projecte amb Typescript (es demana a gairebé totes les entrevistes).
 Si tens dificultats per a crear de zero un projecte TypeScript, aquí tens els passos:
 -> Passos per a preparar un projecte TypeScript
+
+
+API's:
+
+Temps:     https://rapidapi.com/worldapi/api/open-weather13/
+Acudits:   https://icanhazdadjoke.com/
+           https://api.chucknorris.io/#!
+           
+           
+

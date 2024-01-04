@@ -1,6 +1,6 @@
 // Definim l'URL de l'API i l'header
 
-const url = 'https://open-weather13.p.rapidapi.com/city/Canovelles';
+const url = 'https://open-weather13.p.rapidapi.com/city/Barcelona';
 const options = {
 	method: 'GET',
 	headers: {
@@ -29,7 +29,7 @@ async function getWeather() {
         console.log(weatherData);
 
     } catch (error) {
-        console.error(`Error obtenint l'acudit: ${error}`);
+        console.error(`Error obtenint el temps: ${error}`);
     }
 }
 

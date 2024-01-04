@@ -8,7 +8,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-const url = 'https://open-weather13.p.rapidapi.com/city/Canovelles';
+const url = 'https://open-weather13.p.rapidapi.com/city/Barcelona';
 const options = {
     method: 'GET',
     headers: {
@@ -30,7 +30,7 @@ function getWeather() {
             console.log(weatherData);
         }
         catch (error) {
-            console.error(`Error obtenint l'acudit: ${error}`);
+            console.error(`Error obtenint el temps: ${error}`);
         }
     });
 }

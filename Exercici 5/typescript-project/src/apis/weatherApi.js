@@ -8,25 +8,26 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-const url = 'https://open-weather13.p.rapidapi.com/city/Barcelona';
-const options = {
-    method: 'GET',
-    headers: {
-        'X-RapidAPI-Key': '8d92157160mshc16fbd5b24e2d3dp1ba813jsne99bd5f2263a',
-        'X-RapidAPI-Host': 'open-weather13.p.rapidapi.com'
-    }
-};
 function getWeather() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
-            const resp = yield fetch(url, options);
+            const resp = yield fetch('http://api.weatherapi.com/v1/current.json?key=577e68d5045f4d7396c212746240401&q=Barcelona');
             if (!resp.ok) {
                 throw new Error(`HTTP error! status: ${resp.status}`);
             }
             const weatherData = yield resp.json();
-            const wetherInfo = weatherData.weather[0].description;
-            const temp = (((weatherData.main.temp) - 32) * (5 / 9)).toFixed(1);
-            document.querySelector('.weatherInfo').innerText = `${wetherInfo} ${temp}ºC`;
+            const iconUrl = weatherData.current.condition.icon;
+            const temp_C = weatherData.current.temp_c;
+            let img = document.createElement('img');
+            img.src = 'http:' + iconUrl;
+            let weatherInfo = document.querySelector('.weatherInfo');
+            if (weatherInfo) {
+                weatherInfo.appendChild(img);
+                weatherInfo.innerHTML += ` ${temp_C}ºC`;
+            }
+            else {
+                console.error('No se encontró el elemento .weatherInfo');
+            }
             console.log(weatherData);
         }
         catch (error) {

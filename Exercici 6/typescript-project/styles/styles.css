@@ -22,9 +22,8 @@ body {
 /* CONTAINER STYLES */
 
 .jokeContainer {
-    width: auto;   
-    min-height: auto;
-    background-color: white;
+    width: 32%;   
+    min-height: auto;    
     padding: 40px;
     flex-wrap: wrap;       
 }
@@ -38,14 +37,85 @@ body {
     text-align: center;
     margin: auto;
     border-radius: 10px;
+    color: white;
 }
 
 
 /* ICONS */
 
 .icon-emoji {
-    width:  40px;
-    height: 40px;
+    width:  60px;
+    height: 60px;
+    cursor: pointer;
 }
 
 
+/* MEDIA QUERY */
+
+@media only screen and (max-width:768px){
+
+    body {        
+        min-height: 110vh;
+    }
+
+   
+    .jokeContainer {
+        width: auto;
+        margin-top: 150px;   
+        min-height: auto;    
+        padding: 20px;
+        flex-wrap: wrap;       
+    }
+
+    .headingText {
+        font-size: 30px;
+    }
+    
+    .jokeText {
+        font-size: 15px;
+    }
+
+    .icon-emoji {
+        width:  30px;
+        height: 30px;
+    }
+
+    .icons {
+        margin-top: 5px;
+    }   
+
+}
+
+@media only screen and (max-width:1200px){
+
+    body {        
+        min-height: 110vh;
+    }
+
+   
+    .jokeContainer {
+        width: 60%;
+        margin-top: 50px;   
+        min-height: auto;    
+        padding: 20px;
+        flex-wrap: wrap;       
+    }
+
+    .headingText {
+        font-size: 40px;
+    }
+    
+    .jokeText {
+        font-size: 25px;
+    }
+
+    .icon-emoji {
+        width:  40px;
+        height: 40px;
+    }
+
+    .icons {
+        margin-top: 5px;
+    }   
+
+}

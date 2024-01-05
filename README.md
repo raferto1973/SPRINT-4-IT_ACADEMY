@@ -52,9 +52,10 @@ Si tens dificultats per a crear de zero un projecte TypeScript, aquí tens els p
 
 API's:
 
-Temps:     https://rapidapi.com/worldapi/api/open-weather13/
+Temps:     https://www.weatherapi.com/my/analytics.aspx
 Acudits:   https://icanhazdadjoke.com/
            https://api.chucknorris.io/#!
+           
            
            
 
